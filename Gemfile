@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby "2.1.3"
 
 gem 'coffee-rails', '~> 4.0.0'
+gem 'foundation-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg'
@@ -14,6 +15,7 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
  
 group :development, :test do
+ 	gem 'rspec-rails', '~> 3.0'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'capybara'
@@ -21,13 +23,12 @@ group :development, :test do
   gem 'growl'
   gem 'guard-rspec'
   gem 'guard-spring'
+  gem 'launchy'
   gem 'meta_request'
   gem 'pry-rails'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
-  gem 'rspec-rails'
   gem 'spring-commands-rspec'
   gem 'terminal-notifier-guard'
-  gem 'launchy'
 end
  
 group :assets do
